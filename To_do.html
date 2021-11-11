@@ -1,29 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>js</title>
 
-    <script>
-    function printvalue(){
-        var name=document.form1.name.value;
-
-        alert("welcome:-"+name);
-    }
-    </script>
-
-
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
     
-    <form name="form1">
-        Enter Name:-<input type="text" name="name">
+    <head>
+        <title>To-Do List</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="todo.css">
 
-        <input type="button" onclick="printvalue()" value="print name">
+        
 
-    </form>
-
-</body>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>To-do list</h1>
+            
+            <div class="add-elements">
+                <input id="add" type="text" placeholder="add an element">
+                <button id="btn">Add</button>
+            </div>
+            
+            <div class="element-list">
+                <ul id="list">
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <script src="script_todo.js"></script>
+    </body>
+    
 </html>
